@@ -34,7 +34,7 @@ jobs:
         with: # optional arguments
           exit_zero: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # path: # optional, default is .
+          path: src
           # Report only issues of a given severity level or higher. Can be LOW, MEDIUM or HIGH. Default is UNDEFINED (everything)
           # level: # optional, default is UNDEFINED
           # Report only issues of a given confidence level or higher. Can be LOW, MEDIUM or HIGH. Default is UNDEFINED (everything)
