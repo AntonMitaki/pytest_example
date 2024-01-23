@@ -6,6 +6,7 @@ class NotAStringError(Exception):
     def __str__(self):
         return f'"{self.value}": {self.message}'
 
+
 class TooShortError(Exception):
     def __init__(self, value):
         self.value = value
@@ -13,6 +14,7 @@ class TooShortError(Exception):
 
     def __str__(self):
         return f'"{self.value}": {self.message}'
+
 
 class MiddleChar:
     def get(word: str) -> str:
@@ -30,6 +32,7 @@ class MiddleChar:
             return word[middle - 1:middle + 1]
         elif remainder != 0:
             return word[middle]
+
 
 if __name__ == "__main__":
     middle_char = MiddleChar()
